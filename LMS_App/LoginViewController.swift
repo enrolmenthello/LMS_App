@@ -25,14 +25,21 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func login(_ sender: Any) {
-        if idTextField.text == nil || idTextField.text == "" {
-            alertLogin(str: "id")
-            return
-        }
-        if pwTextField.text == nil || pwTextField.text == "" {
-            alertLogin(str: "pw")
-            return
-        }
+//        if idTextField.text == nil || idTextField.text == "" {
+//            alertLogin(str: "id")
+//            return
+//        }
+//        if pwTextField.text == nil || pwTextField.text == "" {
+//            alertLogin(str: "pw")
+//            return
+//        }
+        
+        guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") else {return}
+        
+        mainVC.modalTransitionStyle = .coverVertical
+        mainVC.modalPresentationStyle = .fullScreen
+        
+        self.present(mainVC, animated: false)
     }
     
     private func alertLogin(str: String) {

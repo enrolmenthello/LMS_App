@@ -18,6 +18,7 @@
 		732EEED6297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEED5297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift */; };
 		73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F87297678D500EBA5EF /* JoinViewController.swift */; };
 		73AA6F8F297687B100EBA5EF /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AA6F8E297687B100EBA5EF /* symbol.png */; };
+		73AA6F912976A2EE00EBA5EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F902976A2EE00EBA5EF /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		732EEED5297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		73AA6F87297678D500EBA5EF /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		73AA6F8E297687B100EBA5EF /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = symbol.png; path = ../../../../Downloads/symbol.png; sourceTree = "<group>"; };
+		73AA6F902976A2EE00EBA5EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				732EEEB4297528A800D9084A /* SceneDelegate.swift */,
 				732EEEB6297528A800D9084A /* LoginViewController.swift */,
 				73AA6F87297678D500EBA5EF /* JoinViewController.swift */,
+				73AA6F902976A2EE00EBA5EF /* MainViewController.swift */,
 				732EEEB8297528A800D9084A /* Main.storyboard */,
 				732EEEBB297528AA00D9084A /* Assets.xcassets */,
 				732EEEBD297528AA00D9084A /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				732EEEB3297528A800D9084A /* AppDelegate.swift in Sources */,
 				73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */,
 				732EEEB5297528A800D9084A /* SceneDelegate.swift in Sources */,
+				73AA6F912976A2EE00EBA5EF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
