@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		732EEEB3297528A800D9084A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEB2297528A800D9084A /* AppDelegate.swift */; };
 		732EEEB5297528A800D9084A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEB4297528A800D9084A /* SceneDelegate.swift */; };
-		732EEEB7297528A800D9084A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEB6297528A800D9084A /* ViewController.swift */; };
+		732EEEB7297528A800D9084A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEB6297528A800D9084A /* LoginViewController.swift */; };
 		732EEEBA297528A800D9084A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732EEEB8297528A800D9084A /* Main.storyboard */; };
 		732EEEBC297528AA00D9084A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732EEEBB297528AA00D9084A /* Assets.xcassets */; };
 		732EEEBF297528AA00D9084A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732EEEBD297528AA00D9084A /* LaunchScreen.storyboard */; };
 		732EEECA297528AA00D9084A /* LMS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEC9297528AA00D9084A /* LMS_AppTests.swift */; };
 		732EEED4297528AA00D9084A /* LMS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEED3297528AA00D9084A /* LMS_AppUITests.swift */; };
 		732EEED6297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEED5297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift */; };
+		73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F87297678D500EBA5EF /* JoinViewController.swift */; };
+		73AA6F8F297687B100EBA5EF /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AA6F8E297687B100EBA5EF /* symbol.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		732EEEAF297528A800D9084A /* LMS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		732EEEB2297528A800D9084A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		732EEEB4297528A800D9084A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		732EEEB6297528A800D9084A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		732EEEB6297528A800D9084A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		732EEEB9297528A800D9084A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		732EEEBB297528AA00D9084A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732EEEBE297528AA00D9084A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		732EEECF297528AA00D9084A /* LMS_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMS_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732EEED3297528AA00D9084A /* LMS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMS_AppUITests.swift; sourceTree = "<group>"; };
 		732EEED5297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		73AA6F87297678D500EBA5EF /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		73AA6F8E297687B100EBA5EF /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = symbol.png; path = ../../../../Downloads/symbol.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		732EEEB1297528A800D9084A /* LMS_App */ = {
 			isa = PBXGroup;
 			children = (
+				73AA6F8E297687B100EBA5EF /* symbol.png */,
 				732EEEB2297528A800D9084A /* AppDelegate.swift */,
 				732EEEB4297528A800D9084A /* SceneDelegate.swift */,
-				732EEEB6297528A800D9084A /* ViewController.swift */,
+				732EEEB6297528A800D9084A /* LoginViewController.swift */,
+				73AA6F87297678D500EBA5EF /* JoinViewController.swift */,
 				732EEEB8297528A800D9084A /* Main.storyboard */,
 				732EEEBB297528AA00D9084A /* Assets.xcassets */,
 				732EEEBD297528AA00D9084A /* LaunchScreen.storyboard */,
@@ -234,6 +240,7 @@
 				732EEEBF297528AA00D9084A /* LaunchScreen.storyboard in Resources */,
 				732EEEBC297528AA00D9084A /* Assets.xcassets in Resources */,
 				732EEEBA297528A800D9084A /* Main.storyboard in Resources */,
+				73AA6F8F297687B100EBA5EF /* symbol.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				732EEEB7297528A800D9084A /* ViewController.swift in Sources */,
+				732EEEB7297528A800D9084A /* LoginViewController.swift in Sources */,
 				732EEEB3297528A800D9084A /* AppDelegate.swift in Sources */,
+				73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */,
 				732EEEB5297528A800D9084A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,8 +451,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +461,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yoosang.LMS-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,8 +483,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +493,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yoosang.LMS-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
