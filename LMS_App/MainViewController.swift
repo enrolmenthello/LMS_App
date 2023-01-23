@@ -20,6 +20,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func moveToSearchView(_ sender: Any) {
+        guard let searchVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController else {return}
+        searchVC.modalTransitionStyle = .coverVertical
+        searchVC.modalPresentationStyle = .fullScreen
+        
+        self.present(searchVC, animated: true)
     }
     
     @IBAction func moveToBackpackView(_ sender: Any) {

@@ -19,6 +19,9 @@
 		73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F87297678D500EBA5EF /* JoinViewController.swift */; };
 		73AA6F8F297687B100EBA5EF /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AA6F8E297687B100EBA5EF /* symbol.png */; };
 		73AA6F912976A2EE00EBA5EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F902976A2EE00EBA5EF /* MainViewController.swift */; };
+		73AA6F93297A608F00EBA5EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F92297A608F00EBA5EF /* SearchViewController.swift */; };
+		73AA6F96297AD9C600EBA5EF /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F94297AD9C600EBA5EF /* SubjectTableViewCell.swift */; };
+		73AA6F97297AD9C600EBA5EF /* SubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73AA6F95297AD9C600EBA5EF /* SubjectTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		73AA6F87297678D500EBA5EF /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		73AA6F8E297687B100EBA5EF /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = symbol.png; path = ../../../../Downloads/symbol.png; sourceTree = "<group>"; };
 		73AA6F902976A2EE00EBA5EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		73AA6F92297A608F00EBA5EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		73AA6F94297AD9C600EBA5EF /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		73AA6F95297AD9C600EBA5EF /* SubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +115,11 @@
 				732EEEB2297528A800D9084A /* AppDelegate.swift */,
 				732EEEB4297528A800D9084A /* SceneDelegate.swift */,
 				732EEEB6297528A800D9084A /* LoginViewController.swift */,
+				73AA6F94297AD9C600EBA5EF /* SubjectTableViewCell.swift */,
+				73AA6F95297AD9C600EBA5EF /* SubjectTableViewCell.xib */,
 				73AA6F87297678D500EBA5EF /* JoinViewController.swift */,
 				73AA6F902976A2EE00EBA5EF /* MainViewController.swift */,
+				73AA6F92297A608F00EBA5EF /* SearchViewController.swift */,
 				732EEEB8297528A800D9084A /* Main.storyboard */,
 				732EEEBB297528AA00D9084A /* Assets.xcassets */,
 				732EEEBD297528AA00D9084A /* LaunchScreen.storyboard */,
@@ -242,6 +251,7 @@
 			files = (
 				732EEEBF297528AA00D9084A /* LaunchScreen.storyboard in Resources */,
 				732EEEBC297528AA00D9084A /* Assets.xcassets in Resources */,
+				73AA6F97297AD9C600EBA5EF /* SubjectTableViewCell.xib in Resources */,
 				732EEEBA297528A800D9084A /* Main.storyboard in Resources */,
 				73AA6F8F297687B100EBA5EF /* symbol.png in Resources */,
 			);
@@ -268,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AA6F93297A608F00EBA5EF /* SearchViewController.swift in Sources */,
 				732EEEB7297528A800D9084A /* LoginViewController.swift in Sources */,
 				732EEEB3297528A800D9084A /* AppDelegate.swift in Sources */,
+				73AA6F96297AD9C600EBA5EF /* SubjectTableViewCell.swift in Sources */,
 				73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */,
 				732EEEB5297528A800D9084A /* SceneDelegate.swift in Sources */,
 				73AA6F912976A2EE00EBA5EF /* MainViewController.swift in Sources */,
