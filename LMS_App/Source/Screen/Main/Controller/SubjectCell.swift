@@ -7,13 +7,12 @@
 
 import UIKit
 
-class SubjectTableViewCell: UITableViewCell {
+class SubjectCell: UITableViewCell {
     
     
-    @IBOutlet weak var subjectNum: UILabel!
-    @IBOutlet weak var subjectName: UILabel!
+    @IBOutlet weak var subject: UILabel!
     @IBOutlet weak var professorName: UILabel!
-    @IBOutlet weak var subjectTime: UILabel!
+    @IBOutlet weak var time: UILabel!
     
     @IBOutlet weak var sincheongButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
@@ -25,15 +24,18 @@ class SubjectTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-    @IBAction func setSubject(_ sender: Any) {
+    func setSubject(subject: String, professorName: String, time: String) {
+        self.subject.text = subject
+        self.professorName.text = professorName
+        self.time.text = time
+    }
+
+    @IBAction func requestSubject(_ sender: Any) {
     }
     
     @IBAction func deleteSubject(_ sender: Any) {
     }
-    
     
 }

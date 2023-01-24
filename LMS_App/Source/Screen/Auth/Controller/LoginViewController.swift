@@ -18,13 +18,27 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationInit()
+        loginVCInit()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func loginVCInit() {
         let image = UIImage(named: "symbol.png")
-        
         symbolImage.image = image
+    }
+    
+    func navigationInit() {
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.topItem?.title = ""
     }
 
 
-    @IBAction func login(_ sender: Any) {
+    @IBAction @objc
+    func login(_ sender: Any) {
 //        if idTextField.text == nil || idTextField.text == "" {
 //            alertLogin(str: "id")
 //            return
@@ -34,12 +48,12 @@ class LoginViewController: UIViewController {
 //            return
 //        }
         
-        guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") else {return}
+        guard let mainVC = UIStoryboard(name: "MainViewController", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else {return}
         
         mainVC.modalTransitionStyle = .coverVertical
         mainVC.modalPresentationStyle = .fullScreen
         
-        self.present(mainVC, animated: false)
+        self.navigationController?.pushViewController(mainVC, animated: true)
     }
     
     private func alertLogin(str: String) {
@@ -69,7 +83,7 @@ class LoginViewController: UIViewController {
         joinVC.modalTransitionStyle = .coverVertical
         joinVC.modalPresentationStyle = .fullScreen
         
-        self.present(joinVC, animated: true)
+        self.navigationController?.pushViewController(joinVC, animated: true)
     }
 
     

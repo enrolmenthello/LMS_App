@@ -17,13 +17,20 @@ class JoinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        joinVCInit()
+        
+        
     }
+    
+    func joinVCInit() {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationItem.title = "회원 가입"
+    }
+    
     
     @IBAction func checkId(_ sender: Any) {
         //id Spring과 연결해서 중복확인
     }
-    
- 
     
     @IBAction func join(_ sender: Any) {
         
@@ -51,7 +58,5 @@ class JoinViewController: UIViewController {
         }
     }
     
-    @IBAction func backToLogin(_ sender: Any) {
-        self.presentingViewController?.dismiss(animated: true)
-    }
+
 }
