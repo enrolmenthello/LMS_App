@@ -47,11 +47,13 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let subject = tableView.dequeueReusableCell(withIdentifier: "SubjectCell", for: indexPath) as! SubjectCell
+        let subjectCell = tableView.dequeueReusableCell(withIdentifier: "SubjectCell", for: indexPath) as! SubjectCell
         
-        subject.setSubject(subject: "강좌 이름 \("(강좌 번호)")", professorName: "교수 이름", time: "강좌 시간")
+        subjectCell.setSubject(subject: "강좌 이름 \("(강좌 번호)")", professorName: "교수 이름", time: "강좌 시간", grade: "3", quantity: "20")
         
-        return subject
+        subjectCell.deleteHidden()
+        
+        return subjectCell
     }
     
     

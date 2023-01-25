@@ -25,6 +25,7 @@ class MainViewController: UIViewController {
     func mainVCInit() {
         let image = UIImage(named: "symbol.png")
         symbolImage.image = image
+        self.navigationItem.backButtonTitle = ""
     }
     
     @IBAction func moveToSearchView(_ sender: Any) {
@@ -37,6 +38,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func moveToBackpackView(_ sender: Any) {
+        let userSubjectTBC = UIStoryboard(name: "UserSubjectViewController", bundle: nil).instantiateViewController(withIdentifier: "UserSubjectTabBarController")
+
+        self.navigationController?.pushViewController(userSubjectTBC, animated: true)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @IBAction func moveToMiridamgiView(_ sender: Any) {

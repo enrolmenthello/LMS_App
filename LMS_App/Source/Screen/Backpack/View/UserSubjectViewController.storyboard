@@ -12,7 +12,7 @@
         <!--Item-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="UserSubjectViewController" id="Y6W-OH-hqX" customClass="UserSubjectViewController" customModule="LMS_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BackpackViewController" id="Y6W-OH-hqX" customClass="BackpackViewController" customModule="LMS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1064.885496183206" y="36.619718309859159"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--User Subject Tab Bar Controller-->
         <scene sceneID="FRN-S6-GW6">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6PU-YR-N6o" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UserSubjectTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="6PU-YR-N6o" customClass="UserSubjectTabBarController" customModule="LMS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7J8-bB-oyj">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
