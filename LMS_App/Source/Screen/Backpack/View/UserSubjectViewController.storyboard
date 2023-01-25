@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserSubjectViewController" id="Y6W-OH-hqX" customClass="UserSubjectViewController" customModule="LMS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,27 +20,78 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsu-HA-f07">
                                 <rect key="frame" x="0.0" y="59" width="393" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~~~ 총 학점 **" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnh-Y5-dnN">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="0gJ-6O-XFO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnh-Y5-dnN">
+                                        <rect key="frame" x="20" y="10" width="137.33333333333334" height="40"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="책가방">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="총">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="학점">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7A-fm-m21">
+                                        <rect key="frame" x="331.33333333333331" y="10" width="41.666666666666686" height="40"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="학점">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="vnh-Y5-dnN" secondAttribute="trailing" id="5Ea-yI-Elu"/>
-                                    <constraint firstItem="vnh-Y5-dnN" firstAttribute="top" secondItem="Dsu-HA-f07" secondAttribute="top" id="6jd-cr-gVO"/>
-                                    <constraint firstItem="vnh-Y5-dnN" firstAttribute="leading" secondItem="Dsu-HA-f07" secondAttribute="leading" id="9ae-K8-7W2"/>
+                                    <constraint firstItem="vnh-Y5-dnN" firstAttribute="leading" secondItem="Dsu-HA-f07" secondAttribute="leading" constant="20" id="9ae-K8-7W2"/>
+                                    <constraint firstItem="z7A-fm-m21" firstAttribute="top" secondItem="Dsu-HA-f07" secondAttribute="top" constant="10" id="J2x-Y9-qB4"/>
+                                    <constraint firstItem="vnh-Y5-dnN" firstAttribute="top" secondItem="Dsu-HA-f07" secondAttribute="top" constant="10" id="LaO-QV-mi6"/>
+                                    <constraint firstAttribute="trailing" secondItem="z7A-fm-m21" secondAttribute="trailing" constant="20" id="PT6-V0-nCG"/>
                                     <constraint firstAttribute="height" constant="60" id="TfU-Gt-Y4F"/>
-                                    <constraint firstAttribute="bottom" secondItem="vnh-Y5-dnN" secondAttribute="bottom" id="q8T-d1-SSO"/>
+                                    <constraint firstAttribute="bottom" secondItem="z7A-fm-m21" secondAttribute="bottom" constant="10" id="m4c-1y-1sf"/>
+                                    <constraint firstAttribute="bottom" secondItem="vnh-Y5-dnN" secondAttribute="bottom" constant="10" id="mrl-fn-HeW"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sU4-ai-HMP">
-                                <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                                <rect key="frame" x="0.0" y="119" width="393" height="650"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -56,10 +107,144 @@
                             <constraint firstItem="Dsu-HA-f07" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qcU-nK-uRo"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Fyf-Pj-Dqg"/>
+                    <connections>
+                        <outlet property="subjectList" destination="sU4-ai-HMP" id="a5W-E1-8SS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="-27"/>
+            <point key="canvasLocation" x="1064.885496183206" y="36.619718309859159"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="FRN-S6-GW6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6PU-YR-N6o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7J8-bB-oyj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="9Hs-Mu-G9p"/>
+                        <segue destination="06p-je-LLY" kind="relationship" relationship="viewControllers" id="vBN-DP-mTN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2o-ap-mm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="367"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="e1p-vo-iix">
+            <objects>
+                <viewController storyboardIdentifier="SincheongViewController" id="06p-je-LLY" customClass="SincheongViewController" customModule="LMS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jfU-ec-qnz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0p-qZ-xDd">
+                                <rect key="frame" x="0.0" y="59" width="393" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-Z8-2aB">
+                                        <rect key="frame" x="20" y="0.0" width="158" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="oQs-r5-xiP"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="신청내역">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="총">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="학점">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCe-Fh-X8K">
+                                        <rect key="frame" x="331.33333333333331" y="10" width="41.666666666666686" height="40"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="학점">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="gxQ-Z8-2aB" firstAttribute="top" secondItem="A0p-qZ-xDd" secondAttribute="top" id="FW3-U4-79d"/>
+                                    <constraint firstItem="hCe-Fh-X8K" firstAttribute="top" secondItem="A0p-qZ-xDd" secondAttribute="top" constant="10" id="Fdo-HN-dQK"/>
+                                    <constraint firstAttribute="trailing" secondItem="hCe-Fh-X8K" secondAttribute="trailing" constant="20" id="Mgj-dP-khz"/>
+                                    <constraint firstItem="gxQ-Z8-2aB" firstAttribute="leading" secondItem="A0p-qZ-xDd" secondAttribute="leading" constant="20" id="QTU-g7-Jpc"/>
+                                    <constraint firstAttribute="bottom" secondItem="gxQ-Z8-2aB" secondAttribute="bottom" id="ZfB-MA-wc0"/>
+                                    <constraint firstAttribute="height" constant="60" id="fYM-YD-dK0"/>
+                                    <constraint firstAttribute="bottom" secondItem="hCe-Fh-X8K" secondAttribute="bottom" constant="10" id="fiZ-1V-Ay1"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="woS-BH-WHn">
+                                <rect key="frame" x="0.0" y="119" width="393" height="650"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dkU-UJ-Xe9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="woS-BH-WHn" firstAttribute="leading" secondItem="dkU-UJ-Xe9" secondAttribute="leading" id="DXI-Fc-1cW"/>
+                            <constraint firstItem="dkU-UJ-Xe9" firstAttribute="trailing" secondItem="A0p-qZ-xDd" secondAttribute="trailing" id="eqo-8w-MpB"/>
+                            <constraint firstItem="woS-BH-WHn" firstAttribute="top" secondItem="A0p-qZ-xDd" secondAttribute="bottom" id="rnm-04-abA"/>
+                            <constraint firstItem="A0p-qZ-xDd" firstAttribute="top" secondItem="dkU-UJ-Xe9" secondAttribute="top" id="vWA-O5-1cV"/>
+                            <constraint firstItem="dkU-UJ-Xe9" firstAttribute="bottom" secondItem="woS-BH-WHn" secondAttribute="bottom" id="vaJ-3O-zIu"/>
+                            <constraint firstItem="dkU-UJ-Xe9" firstAttribute="trailing" secondItem="woS-BH-WHn" secondAttribute="trailing" id="wZd-Jf-VuV"/>
+                            <constraint firstItem="A0p-qZ-xDd" firstAttribute="leading" secondItem="dkU-UJ-Xe9" secondAttribute="leading" id="yUe-K3-21y"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="RmF-kH-ntb"/>
+                    <connections>
+                        <outlet property="gradeLabel" destination="hCe-Fh-X8K" id="cnz-wy-ibv"/>
+                        <outlet property="sincheongSubjectList" destination="woS-BH-WHn" id="P5V-ZE-wJC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5t-Zh-BB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="732"/>
         </scene>
     </scenes>
     <resources>
