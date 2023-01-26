@@ -10,8 +10,6 @@
 		731ACE87297F94A900FB941F /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731ACE86297F94A900FB941F /* SearchViewController.storyboard */; };
 		731ACE8A297FEA3700FB941F /* BackpackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731ACE88297FEA3700FB941F /* BackpackViewController.swift */; };
 		732672B429810DD8007F4E84 /* UserSubjectTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732672B329810DD8007F4E84 /* UserSubjectTabBarController.swift */; };
-		732672BB29811FFD007F4E84 /* SincheongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732672B929811FFD007F4E84 /* SincheongViewController.swift */; };
-		732672BC29811FFD007F4E84 /* SincheongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732672BA29811FFD007F4E84 /* SincheongViewController.xib */; };
 		732EEEB3297528A800D9084A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEB2297528A800D9084A /* AppDelegate.swift */; };
 		732EEEB5297528A800D9084A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEB4297528A800D9084A /* SceneDelegate.swift */; };
 		732EEEB7297528A800D9084A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEEB6297528A800D9084A /* LoginViewController.swift */; };
@@ -22,6 +20,8 @@
 		732EEED4297528AA00D9084A /* LMS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEED3297528AA00D9084A /* LMS_AppUITests.swift */; };
 		732EEED6297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EEED5297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift */; };
 		734EE06A297F8CC800C69D40 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734EE069297F8CC800C69D40 /* MainViewController.storyboard */; };
+		73578FFA298143C900CE386B /* EnrolmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73578FF9298143C900CE386B /* EnrolmentViewController.swift */; };
+		73578FFC298143DF00CE386B /* EnrolmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73578FFB298143DF00CE386B /* EnrolmentViewController.storyboard */; };
 		73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F87297678D500EBA5EF /* JoinViewController.swift */; };
 		73AA6F8F297687B100EBA5EF /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AA6F8E297687B100EBA5EF /* symbol.png */; };
 		73AA6F912976A2EE00EBA5EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F902976A2EE00EBA5EF /* MainViewController.swift */; };
@@ -53,8 +53,6 @@
 		731ACE86297F94A900FB941F /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		731ACE88297FEA3700FB941F /* BackpackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackViewController.swift; sourceTree = "<group>"; };
 		732672B329810DD8007F4E84 /* UserSubjectTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSubjectTabBarController.swift; sourceTree = "<group>"; };
-		732672B929811FFD007F4E84 /* SincheongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SincheongViewController.swift; sourceTree = "<group>"; };
-		732672BA29811FFD007F4E84 /* SincheongViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SincheongViewController.xib; sourceTree = "<group>"; };
 		732EEEAF297528A800D9084A /* LMS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		732EEEB2297528A800D9084A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		732EEEB4297528A800D9084A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		732EEED5297528AA00D9084A /* LMS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		734EE051297F88B800C69D40 /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol.png; sourceTree = "<group>"; };
 		734EE069297F8CC800C69D40 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		73578FF9298143C900CE386B /* EnrolmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolmentViewController.swift; sourceTree = "<group>"; };
+		73578FFB298143DF00CE386B /* EnrolmentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrolmentViewController.storyboard; sourceTree = "<group>"; };
 		73AA6F87297678D500EBA5EF /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		73AA6F8E297687B100EBA5EF /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = symbol.png; path = ../../../../Downloads/symbol.png; sourceTree = "<group>"; };
 		73AA6F902976A2EE00EBA5EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -288,8 +288,8 @@
 				734EE04C297F884800C69D40 /* Auth */,
 				734EE054297F894800C69D40 /* Main */,
 				734EE059297F8A9C00C69D40 /* Search */,
-				734EE05E297F8AF500C69D40 /* Backpack */,
-				734EE05D297F8AD500C69D40 /* Sincheong */,
+				734EE05E297F8AF500C69D40 /* UserInfo */,
+				734EE05D297F8AD500C69D40 /* Enrolment */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -327,24 +327,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		734EE05D297F8AD500C69D40 /* Sincheong */ = {
+		734EE05D297F8AD500C69D40 /* Enrolment */ = {
 			isa = PBXGroup;
 			children = (
 				734EE068297F8B9700C69D40 /* Model */,
 				734EE067297F8B9300C69D40 /* View */,
 				734EE066297F8B8C00C69D40 /* Controller */,
 			);
-			path = Sincheong;
+			path = Enrolment;
 			sourceTree = "<group>";
 		};
-		734EE05E297F8AF500C69D40 /* Backpack */ = {
+		734EE05E297F8AF500C69D40 /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
 				734EE065297F8B8600C69D40 /* Model */,
 				734EE064297F8B8300C69D40 /* View */,
 				734EE063297F8B7B00C69D40 /* Controller */,
 			);
-			path = Backpack;
+			path = UserInfo;
 			sourceTree = "<group>";
 		};
 		734EE063297F8B7B00C69D40 /* Controller */ = {
@@ -375,7 +375,7 @@
 		734EE066297F8B8C00C69D40 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				732672B929811FFD007F4E84 /* SincheongViewController.swift */,
+				73578FF9298143C900CE386B /* EnrolmentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,7 +383,7 @@
 		734EE067297F8B9300C69D40 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				732672BA29811FFD007F4E84 /* SincheongViewController.xib */,
+				73578FFB298143DF00CE386B /* EnrolmentViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -502,8 +502,8 @@
 				732EEEBF297528AA00D9084A /* LaunchScreen.storyboard in Resources */,
 				73EBBEC0297FEA74001D9F7F /* UserSubjectViewController.storyboard in Resources */,
 				732EEEBC297528AA00D9084A /* Assets.xcassets in Resources */,
+				73578FFC298143DF00CE386B /* EnrolmentViewController.storyboard in Resources */,
 				73AA6F97297AD9C600EBA5EF /* SubjectCell.xib in Resources */,
-				732672BC29811FFD007F4E84 /* SincheongViewController.xib in Resources */,
 				731ACE87297F94A900FB941F /* SearchViewController.storyboard in Resources */,
 				732EEEBA297528A800D9084A /* Main.storyboard in Resources */,
 				734EE06A297F8CC800C69D40 /* MainViewController.storyboard in Resources */,
@@ -536,13 +536,13 @@
 				731ACE8A297FEA3700FB941F /* BackpackViewController.swift in Sources */,
 				73AA6F93297A608F00EBA5EF /* SearchViewController.swift in Sources */,
 				732672B429810DD8007F4E84 /* UserSubjectTabBarController.swift in Sources */,
-				732672BB29811FFD007F4E84 /* SincheongViewController.swift in Sources */,
 				732EEEB7297528A800D9084A /* LoginViewController.swift in Sources */,
 				732EEEB3297528A800D9084A /* AppDelegate.swift in Sources */,
 				73AA6F96297AD9C600EBA5EF /* SubjectCell.swift in Sources */,
 				73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */,
 				732EEEB5297528A800D9084A /* SceneDelegate.swift in Sources */,
 				73AA6F912976A2EE00EBA5EF /* MainViewController.swift in Sources */,
+				73578FFA298143C900CE386B /* EnrolmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

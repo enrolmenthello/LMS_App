@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="d1H-r6-Fw2">
+            <objects>
+                <viewController storyboardIdentifier="EnrolmentViewController" id="NtJ-gR-SZM" customClass="EnrolmentViewController" customModule="LMS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PgA-kA-zaI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="강좌명" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8p-OI-Q9n">
+                                <rect key="frame" x="20" y="79" width="291" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2m-6R-Rn5">
+                                <rect key="frame" x="319" y="79" width="54" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="검색"/>
+                                <connections>
+                                    <action selector="subjectSearch:" destination="NtJ-gR-SZM" eventType="touchUpInside" id="SaO-mY-WQ7"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g2K-6V-fgu">
+                                <rect key="frame" x="0.0" y="133" width="393" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rUl-6k-v6W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U2m-6R-Rn5" firstAttribute="top" secondItem="rUl-6k-v6W" secondAttribute="top" constant="20" id="5RR-RF-lCB"/>
+                            <constraint firstItem="g2K-6V-fgu" firstAttribute="leading" secondItem="rUl-6k-v6W" secondAttribute="leading" id="AkO-6I-eaJ"/>
+                            <constraint firstItem="U2m-6R-Rn5" firstAttribute="leading" secondItem="n8p-OI-Q9n" secondAttribute="trailing" constant="8" symbolic="YES" id="XQ9-Fb-bFZ"/>
+                            <constraint firstItem="rUl-6k-v6W" firstAttribute="trailing" secondItem="g2K-6V-fgu" secondAttribute="trailing" id="eDe-xI-cdZ"/>
+                            <constraint firstItem="rUl-6k-v6W" firstAttribute="bottom" secondItem="g2K-6V-fgu" secondAttribute="bottom" id="pIS-UH-OrD"/>
+                            <constraint firstItem="n8p-OI-Q9n" firstAttribute="leading" secondItem="rUl-6k-v6W" secondAttribute="leading" constant="20" id="ry8-C0-v0L"/>
+                            <constraint firstItem="rUl-6k-v6W" firstAttribute="trailing" secondItem="U2m-6R-Rn5" secondAttribute="trailing" constant="20" id="v2y-sN-uDn"/>
+                            <constraint firstItem="g2K-6V-fgu" firstAttribute="top" secondItem="n8p-OI-Q9n" secondAttribute="bottom" constant="20" id="vvF-uf-K40"/>
+                            <constraint firstItem="n8p-OI-Q9n" firstAttribute="top" secondItem="rUl-6k-v6W" secondAttribute="top" constant="20" id="xjX-Iz-aWr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="tBN-e1-spz"/>
+                    <connections>
+                        <outlet property="subjectList" destination="g2K-6V-fgu" id="8J4-Ta-rSH"/>
+                        <outlet property="subjectTextField" destination="n8p-OI-Q9n" id="OeY-RM-Kad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCF-3R-MqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

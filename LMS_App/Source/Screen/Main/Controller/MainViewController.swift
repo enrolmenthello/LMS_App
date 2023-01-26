@@ -37,7 +37,7 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(searchVC, animated: true)
     }
     
-    @IBAction func moveToBackpackView(_ sender: Any) {
+    @IBAction func moveToUserView(_ sender: Any) {
         let userSubjectTBC = UIStoryboard(name: "UserSubjectViewController", bundle: nil).instantiateViewController(withIdentifier: "UserSubjectTabBarController")
 
         self.navigationController?.pushViewController(userSubjectTBC, animated: true)
@@ -45,10 +45,15 @@ class MainViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    @IBAction func moveToMiridamgiView(_ sender: Any) {
-    }
-    
-    @IBAction func moveToSincheongView(_ sender: Any) {
+    @IBAction func moveToEnrolmentView(_ sender: Any) {
+        guard let enrolmentVC = UIStoryboard(name: "EnrolmentViewController", bundle: nil).instantiateViewController(withIdentifier: "EnrolmentViewController") as? EnrolmentViewController else {return}
+        
+        enrolmentVC.modalTransitionStyle = .coverVertical
+        enrolmentVC.modalPresentationStyle = .fullScreen
+        
+        self.navigationController?.pushViewController(enrolmentVC, animated: true)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @IBAction func logout(_ sender: Any) {

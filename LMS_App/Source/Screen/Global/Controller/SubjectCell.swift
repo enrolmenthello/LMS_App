@@ -19,7 +19,9 @@ class SubjectCell: UITableViewCell {
     @IBOutlet weak var quantity: UILabel!
     
     @IBOutlet weak var sincheongButton: UIButton!
+    @IBOutlet weak var damgiButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,15 +40,17 @@ class SubjectCell: UITableViewCell {
         self.quantity.text = quantity
     }
     
+    func showDamgiButton() {
+        self.damgiButton.isHidden = false
+    }
+    
     func sincheongHidden() {
         self.sincheongButton.isHidden = true
     }
     
     func deleteHidden() {
         self.deleteButton.isHidden = true
-        
-        self.sincheongButtonLeft.constant = 54.0
-        self.sincheongButtonRight.constant = -54.0
+        self.sincheongButtonRight.constant = -59.0
     }
 
     @IBAction func requestSubject(_ sender: Any) {

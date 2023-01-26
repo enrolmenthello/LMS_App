@@ -11,10 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" restorationIdentifier="SubjectCell" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="SubjectCell" customModule="LMS_App" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="426" height="65"/>
+            <rect key="frame" x="0.0" y="0.0" width="503" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="426" height="65"/>
+                <rect key="frame" x="0.0" y="0.0" width="503" height="65"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강좌 이름 [강좌 번호]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFf-dI-gAV">
@@ -30,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g98-x7-KcV">
-                        <rect key="frame" x="298" y="15" width="54" height="35"/>
+                        <rect key="frame" x="385" y="15" width="54" height="35"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="신청"/>
                         <connections>
@@ -38,7 +38,7 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-pk-W95">
-                        <rect key="frame" x="362" y="15" width="54" height="35"/>
+                        <rect key="frame" x="444" y="15" width="54" height="35"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="삭제"/>
                         <connections>
@@ -52,52 +52,61 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUe-h9-fHi">
-                        <rect key="frame" x="188" y="15" width="30" height="35"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="237.33333333333334" y="15" width="24.333333333333343" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-7J-Zsd">
-                        <rect key="frame" x="248" y="15" width="30" height="35"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="281.66666666666669" y="15" width="24.333333333333314" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHr-gs-liB">
+                        <rect key="frame" x="326" y="15" width="54" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="담기"/>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NUe-h9-fHi" secondAttribute="bottom" constant="15" id="1in-gP-7Vs"/>
                     <constraint firstItem="g98-x7-KcV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="1w7-7H-pNy"/>
+                    <constraint firstItem="lgo-7J-Zsd" firstAttribute="leading" secondItem="NUe-h9-fHi" secondAttribute="trailing" constant="20" id="4G3-Bc-i49"/>
                     <constraint firstAttribute="bottom" secondItem="iGd-pk-W95" secondAttribute="bottom" constant="15" id="5J3-31-3eh"/>
                     <constraint firstItem="tOh-4L-m3Z" firstAttribute="leading" secondItem="R29-Rl-ZwY" secondAttribute="trailing" constant="50" id="7rF-Z9-6De"/>
-                    <constraint firstAttribute="bottom" secondItem="NUe-h9-fHi" secondAttribute="bottom" constant="15" id="BNj-FE-Tng"/>
-                    <constraint firstAttribute="trailing" secondItem="iGd-pk-W95" secondAttribute="trailing" constant="10" id="DFJ-hq-Mun"/>
-                    <constraint firstItem="g98-x7-KcV" firstAttribute="leading" secondItem="lgo-7J-Zsd" secondAttribute="trailing" constant="20" id="DTH-SS-0uh"/>
-                    <constraint firstItem="lgo-7J-Zsd" firstAttribute="leading" secondItem="NUe-h9-fHi" secondAttribute="trailing" constant="30" id="L6y-DT-r7u"/>
+                    <constraint firstAttribute="trailing" secondItem="iGd-pk-W95" secondAttribute="trailing" constant="5" id="DFJ-hq-Mun"/>
                     <constraint firstItem="YFf-dI-gAV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Lq8-fy-Lll"/>
-                    <constraint firstItem="NUe-h9-fHi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="MTR-14-Atc"/>
+                    <constraint firstItem="KHr-gs-liB" firstAttribute="leading" secondItem="lgo-7J-Zsd" secondAttribute="trailing" constant="20" id="O7b-Qh-T5h"/>
                     <constraint firstItem="iGd-pk-W95" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="RtM-MZ-v2F"/>
                     <constraint firstItem="lgo-7J-Zsd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Utx-WG-ltU"/>
                     <constraint firstItem="YFf-dI-gAV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xu7-cU-Qoz"/>
-                    <constraint firstItem="iGd-pk-W95" firstAttribute="leading" secondItem="g98-x7-KcV" secondAttribute="trailing" constant="10" id="ezk-tP-2ye"/>
+                    <constraint firstItem="NUe-h9-fHi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XwE-hb-WrU"/>
+                    <constraint firstAttribute="bottom" secondItem="KHr-gs-liB" secondAttribute="bottom" constant="15" id="dVc-YH-Z3m"/>
+                    <constraint firstItem="iGd-pk-W95" firstAttribute="leading" secondItem="g98-x7-KcV" secondAttribute="trailing" constant="5" id="ezk-tP-2ye"/>
                     <constraint firstAttribute="bottom" secondItem="lgo-7J-Zsd" secondAttribute="bottom" constant="15" id="gDT-rH-hcN"/>
                     <constraint firstAttribute="bottom" secondItem="tOh-4L-m3Z" secondAttribute="bottom" constant="5" id="le4-zw-HYs"/>
                     <constraint firstAttribute="bottom" secondItem="g98-x7-KcV" secondAttribute="bottom" constant="15" id="mI2-sY-n75"/>
                     <constraint firstItem="R29-Rl-ZwY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="msd-hs-bWD"/>
+                    <constraint firstItem="KHr-gs-liB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="pqa-qe-5Ad"/>
+                    <constraint firstItem="g98-x7-KcV" firstAttribute="leading" secondItem="KHr-gs-liB" secondAttribute="trailing" constant="5" id="sgT-1r-sTG"/>
                     <constraint firstAttribute="bottom" secondItem="R29-Rl-ZwY" secondAttribute="bottom" constant="5" id="ugO-rv-Lzy"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="damgiButton" destination="KHr-gs-liB" id="xrD-nQ-Voa"/>
                 <outlet property="deleteButton" destination="iGd-pk-W95" id="4zD-GB-J3r"/>
                 <outlet property="grade" destination="NUe-h9-fHi" id="GE0-4D-z2o"/>
                 <outlet property="professorName" destination="R29-Rl-ZwY" id="T2h-FE-z53"/>
                 <outlet property="quantity" destination="lgo-7J-Zsd" id="aE7-Is-ny3"/>
                 <outlet property="sincheongButton" destination="g98-x7-KcV" id="AHc-6A-RB6"/>
-                <outlet property="sincheongButtonLeft" destination="DTH-SS-0uh" id="0Kd-go-R6p"/>
+                <outlet property="sincheongButtonLeft" destination="O7b-Qh-T5h" id="8E7-1Y-oTH"/>
                 <outlet property="sincheongButtonRight" destination="ezk-tP-2ye" id="acu-mS-Zfd"/>
                 <outlet property="subject" destination="YFf-dI-gAV" id="EFf-He-QuI"/>
                 <outlet property="time" destination="tOh-4L-m3Z" id="ogn-sX-wjd"/>
             </connections>
-            <point key="canvasLocation" x="210.68702290076334" y="-3.8732394366197185"/>
+            <point key="canvasLocation" x="269.46564885496184" y="-3.8732394366197185"/>
         </tableViewCell>
     </objects>
 </document>
