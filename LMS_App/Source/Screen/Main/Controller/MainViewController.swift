@@ -11,22 +11,29 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var symbolImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainVCInit()
+        setup()
+        setupNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        setup()
+        setupNavigationBar()
     }
     
-    func mainVCInit() {
-        let image = UIImage(named: "symbol.png")
-        symbolImage.image = image
-        self.navigationItem.backButtonTitle = ""
+    func setup() {
+        nameLabel.text = (MemberToken.member?.name ?? "") + "님 환영합니다."
     }
+    
+    func setupNavigationBar() {
+        self.navigationItem.backButtonTitle = ""
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+
     
     @IBAction func moveToSearchView(_ sender: Any) {
         guard let searchVC = UIStoryboard(name: "SearchViewController", bundle: nil).instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController else {return}
@@ -57,6 +64,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func logout(_ sender: Any) {
+        MemberToken.member = nil
         self.navigationController?.popViewController(animated: true)
     }
     
