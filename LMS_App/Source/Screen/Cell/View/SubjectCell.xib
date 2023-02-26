@@ -67,6 +67,9 @@
                         <rect key="frame" x="326" y="15" width="54" height="35"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="담기"/>
+                        <connections>
+                            <action selector="damgiSubject:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PCg-Ez-TTb"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -97,14 +100,14 @@
             <connections>
                 <outlet property="damgiButton" destination="KHr-gs-liB" id="xrD-nQ-Voa"/>
                 <outlet property="deleteButton" destination="iGd-pk-W95" id="4zD-GB-J3r"/>
-                <outlet property="grade" destination="NUe-h9-fHi" id="GE0-4D-z2o"/>
-                <outlet property="professorName" destination="R29-Rl-ZwY" id="T2h-FE-z53"/>
-                <outlet property="quantity" destination="lgo-7J-Zsd" id="aE7-Is-ny3"/>
+                <outlet property="gradeLabel" destination="NUe-h9-fHi" id="DDl-tc-tY2"/>
+                <outlet property="professorNameLabel" destination="R29-Rl-ZwY" id="d2S-Fc-J3d"/>
+                <outlet property="quantityLabel" destination="lgo-7J-Zsd" id="BA9-3r-Dw9"/>
                 <outlet property="sincheongButton" destination="g98-x7-KcV" id="AHc-6A-RB6"/>
                 <outlet property="sincheongButtonLeft" destination="O7b-Qh-T5h" id="8E7-1Y-oTH"/>
                 <outlet property="sincheongButtonRight" destination="ezk-tP-2ye" id="acu-mS-Zfd"/>
-                <outlet property="subject" destination="YFf-dI-gAV" id="EFf-He-QuI"/>
-                <outlet property="time" destination="tOh-4L-m3Z" id="ogn-sX-wjd"/>
+                <outlet property="subjectLabel" destination="YFf-dI-gAV" id="a05-kw-YLm"/>
+                <outlet property="timeLabel" destination="tOh-4L-m3Z" id="HuO-gL-nbl"/>
             </connections>
             <point key="canvasLocation" x="269.46564885496184" y="-3.8732394366197185"/>
         </tableViewCell>

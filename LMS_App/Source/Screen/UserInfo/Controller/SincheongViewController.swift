@@ -40,7 +40,7 @@ extension SincheongViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let subjectCell = tableView.dequeueReusableCell(withIdentifier: "SubjectCell", for: indexPath) as! SubjectCell
     
-        subjectCell.setSubject(subject: "신청입니다", professorName: "신청입니다", time: "신청입니다", grade: "3", quantity: "20")
+//        subjectCell.setSubject(subject: "신청입니다", professorName: "신청입니다", time: "신청입니다", grade: "3", quantity: "20")
         subjectCell.sincheongHidden()
         
         return subjectCell

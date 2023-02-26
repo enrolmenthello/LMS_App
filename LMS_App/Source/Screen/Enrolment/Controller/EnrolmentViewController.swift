@@ -10,27 +10,28 @@ import UIKit
 class EnrolmentViewController: UIViewController {
 
     @IBOutlet weak var subjectTextField: UITextField!
+    @IBOutlet weak var subjecTableView: UITableView!
     
-    
-    @IBOutlet weak var subjectList: UITableView! {
-        didSet {
-            subjectList.delegate = self
-            subjectList.dataSource = self
-            
-            let subjectCellNib = UINib(nibName: "SubjectCell", bundle: nil)
-            
-            subjectList.register(subjectCellNib, forCellReuseIdentifier: "SubjectCell")
-        }
-    }
+    var subjectList: Array<Subject> = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        enrolmentVCInit()
+        setup()
+        setupNavigationBar()
+        fetchSubject()
     }
     
-    func enrolmentVCInit() {
+    func setup() {
+        subjecTableView.delegate = self
+        subjecTableView.dataSource = self
+        
+        let subjectCellNib = UINib(nibName: "SubjectCell", bundle: nil)
+        subjecTableView.register(subjectCellNib, forCellReuseIdentifier: "SubjectCell")
+    }
+    
+    func setupNavigationBar() {
         self.navigationItem.title = "미리담기 및 수강신청"
     }
     
@@ -42,19 +43,27 @@ class EnrolmentViewController: UIViewController {
 
 extension EnrolmentViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return subjectList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let subject = tableView.dequeueReusableCell(withIdentifier: "SubjectCell", for: indexPath) as! SubjectCell
         
-        subject.setSubject(subject: "신청 / 담기", professorName: "신청 / 담기", time: "신청 / 담기", grade: "3", quantity: "23 / 25")
-        
-        subject.showDamgiButton()
-        subject.deleteHidden()
-        
+        if subjectList.count != 0{
+            subject.setSubject(subject: subjectList[indexPath.row])
+            subject.showDamgiButton()
+            subject.deleteHidden()
+        }
         return subject
     }
-    
-    
+}
+
+extension EnrolmentViewController {
+    func fetchSubject() {
+        APIManager.shared.getData(urlEndpointString: "/subjectList", dataType: SubjectListResult.self, header: nil) { [weak self] response in
+            print(response.result)
+            self?.subjectList = response.result
+            self?.subjecTableView.reloadData()
+        }
+    }
 }

@@ -51,7 +51,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="tBN-e1-spz"/>
                     <connections>
-                        <outlet property="subjectList" destination="g2K-6V-fgu" id="8J4-Ta-rSH"/>
+                        <outlet property="subjecTableView" destination="g2K-6V-fgu" id="OLO-q6-RcQ"/>
                         <outlet property="subjectTextField" destination="n8p-OI-Q9n" id="OeY-RM-Kad"/>
                     </connections>
                 </viewController>

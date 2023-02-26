@@ -24,6 +24,7 @@
 		73578FFA298143C900CE386B /* EnrolmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73578FF9298143C900CE386B /* EnrolmentViewController.swift */; };
 		73578FFC298143DF00CE386B /* EnrolmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73578FFB298143DF00CE386B /* EnrolmentViewController.storyboard */; };
 		73A3A41A29A9DEB000724463 /* MemberToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3A41929A9DEB000724463 /* MemberToken.swift */; };
+		73A3A41E29ABB0BD00724463 /* EnrolmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3A41D29ABB0BD00724463 /* EnrolmentModel.swift */; };
 		73AA6F88297678D500EBA5EF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F87297678D500EBA5EF /* JoinViewController.swift */; };
 		73AA6F912976A2EE00EBA5EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F902976A2EE00EBA5EF /* MainViewController.swift */; };
 		73AA6F93297A608F00EBA5EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA6F92297A608F00EBA5EF /* SearchViewController.swift */; };
@@ -80,6 +81,7 @@
 		73578FF9298143C900CE386B /* EnrolmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolmentViewController.swift; sourceTree = "<group>"; };
 		73578FFB298143DF00CE386B /* EnrolmentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrolmentViewController.storyboard; sourceTree = "<group>"; };
 		73A3A41929A9DEB000724463 /* MemberToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberToken.swift; sourceTree = "<group>"; };
+		73A3A41D29ABB0BD00724463 /* EnrolmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolmentModel.swift; sourceTree = "<group>"; };
 		73AA6F87297678D500EBA5EF /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		73AA6F902976A2EE00EBA5EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		73AA6F92297A608F00EBA5EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 		734EE068297F8B9700C69D40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				73A3A41D29ABB0BD00724463 /* EnrolmentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -703,6 +706,7 @@
 				73FE8BAE2990B3A300264B44 /* AuthModel.swift in Sources */,
 				731ACE8A297FEA3700FB941F /* BackpackViewController.swift in Sources */,
 				73AA6F93297A608F00EBA5EF /* SearchViewController.swift in Sources */,
+				73A3A41E29ABB0BD00724463 /* EnrolmentModel.swift in Sources */,
 				732672B429810DD8007F4E84 /* UserSubjectTabBarController.swift in Sources */,
 				732EEEB7297528A800D9084A /* LoginViewController.swift in Sources */,
 				732EEEB3297528A800D9084A /* AppDelegate.swift in Sources */,
