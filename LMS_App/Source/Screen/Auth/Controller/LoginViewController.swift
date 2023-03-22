@@ -23,6 +23,12 @@ class LoginViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        AuthViewModel.shared.getMember { member in
+            if member != nil {
+                self.moveToMainVC()
+            }
+        }
     }
     
     
@@ -32,8 +38,7 @@ class LoginViewController: UIViewController {
     }
 
 
-    @IBAction @objc
-    func login(_ sender: Any) {
+    @IBAction func login(_ sender: Any) {
         if idTextField.text == nil || idTextField.text == "" {
             showAlert(title: "아이디 입력", message: "로그인 하기 위해서는 아이디를 입력해주세요.")
             return
@@ -45,12 +50,7 @@ class LoginViewController: UIViewController {
         let id = idTextField.text ?? ""
         let password = pwTextField.text ?? ""
         
-        postLogin(id: id, pw: password) { [weak self] response in
-            if response.result.id == id {
-                MemberToken.member = response.result
-                self?.moveToMainVC()
-            }
-        }
+        AuthViewModel.shared.login(id: id, pw: password)
     }
     
     private func showAlert(title: String, message: String) {
@@ -77,29 +77,5 @@ class LoginViewController: UIViewController {
         
         self.navigationController?.pushViewController(joinVC, animated: true)
     }
-
-    
 }
 
-extension LoginViewController {
-    func postLogin(id: String, pw: String, completionHandler: @escaping (AuthResponse) -> Void) {
-        let url = "http://localhost:8080/login"
-        let params = LoginRequest(id: id, password: pw)
-        AF
-            .request(url,
-                     method: .post,
-                     parameters: params,
-                     encoder: .json,
-                     headers: nil)
-            .responseDecodable(of: AuthResponse.self) { response in
-                print(response)
-                switch response.result {
-                case .success(let success):
-                    completionHandler(success)
-                case .failure(let error):
-                    print(error)
-                }
-            }
-            .resume()
-    }
-}

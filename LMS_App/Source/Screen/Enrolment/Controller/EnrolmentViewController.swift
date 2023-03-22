@@ -20,7 +20,6 @@ class EnrolmentViewController: UIViewController {
         
         setup()
         setupNavigationBar()
-        fetchSubject()
     }
     
     func setup() {
@@ -59,11 +58,11 @@ extension EnrolmentViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension EnrolmentViewController {
-    func fetchSubject() {
-        APIManager.shared.getData(urlEndpointString: "/subjectList", dataType: SubjectListResult.self, header: nil) { [weak self] response in
-            print(response.result)
-            self?.subjectList = response.result
-            self?.subjecTableView.reloadData()
-        }
-    }
+//    func fetchSubject() {
+//        APIManager.shared.getData(urlEndpointString: "/subjectList", dataType: SubjectListResult.self, header: nil) { [weak self] response in
+//            print(response.result)
+//            self?.subjectList = response.result
+//            self?.subjecTableView.reloadData()
+//        }
+//    }
 }

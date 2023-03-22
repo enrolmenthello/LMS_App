@@ -26,7 +26,9 @@ class MainViewController: UIViewController {
     }
     
     func setup() {
-        nameLabel.text = (MemberToken.member?.name ?? "") + "님 환영합니다."
+        AuthViewModel.shared.getName { name in
+            self.nameLabel.text = name + "님 환영합니다."
+        }
     }
     
     func setupNavigationBar() {
@@ -64,7 +66,6 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func logout(_ sender: Any) {
-        MemberToken.member = nil
         self.navigationController?.popViewController(animated: true)
     }
     

@@ -17,13 +17,17 @@ struct APIManager {
     
     func getData<T: Decodable>(urlEndpointString: String,
                                dataType: T.Type,
-                               header: HTTPHeaders?,
-                               completionHandler: @escaping (T)->Void) {
+                               parametrs: Parameters,
+                               completionHandler: @escaping (GeneralResponseModel<T>)->Void) {
         guard let url = URL(string: baseURL + urlEndpointString) else {return}
+        let parameter: Codable = parametrs
         
         AF
-            .request(url, method: .get, headers: header ?? nil)
-            .responseDecodable(of: T.self) { response in
+            .request(url,
+                     method: .get,
+                     parameters: parameter,
+                     headers: nil)
+            .responseDecodable(of: GeneralResponseModel<T>.self) { response in
                 switch response.result {
                 case .success(let success):
                     completionHandler(success)
@@ -37,18 +41,18 @@ struct APIManager {
     
     func postData<T: Codable>(urlEndpointString: String,
                               dataType: T.Type,
-                              header: HTTPHeaders?,
-                              parameter: T,
-                              completionHandler: @escaping (T)->Void) {
+                              parameters: Parameters,
+                              completionHandler: @escaping (GeneralResponseModel<T>)->Void) {
         guard let url = URL(string: baseURL + urlEndpointString) else {return}
+        let parameter: Codable = parameters
         
         AF
             .request(url,
                      method: .post,
                      parameters: parameter,
                      encoder: .json,
-                     headers: header)
-            .responseDecodable(of: T.self) { response in
+                     headers: nil)
+            .responseDecodable(of: GeneralResponseModel<T>.self) { response in
                 switch response.result {
                 case .success(let success):
                     completionHandler(success)

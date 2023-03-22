@@ -31,14 +31,7 @@ class JoinViewController: UIViewController {
     
     @IBAction func checkId(_ sender: Any) {
         let id = idTextField.text ?? ""
-        postCheckId(id: id) { [weak self] response in
-            self?.idCheck = response.result ?? false
-            if self?.idCheck == true {
-                self?.showAlert(title: "아이디 중복확인", message: "가입 할 수 있는 ID 입니다.")
-            }else {
-                self?.showAlert(title: "아이디 중복확인", message: "중복 된 ID 입니다. 다시 시도해주세요.")
-            }
-        }
+       
        
     }
     
@@ -47,11 +40,6 @@ class JoinViewController: UIViewController {
             let id = idTextField.text ?? ""
             let pw = pwTextFiled.text ?? ""
             let name = nameTextFiled.text ?? ""
-            postJoin(id: id, pw: pw, name: name) { [weak self] response in
-                if response.result.id == id {
-                    self?.navigationController?.popViewController(animated: true)
-                }
-            }
         }else {
             if idCheck == false {
                 showAlert(title: "아이디 중복확인", message: "아이디 중복확인을 진행해주세요.")
@@ -82,46 +70,3 @@ class JoinViewController: UIViewController {
 
 }
 
-extension JoinViewController {
-    func postCheckId(id: String, completionHandler: @escaping (CheckIdResponse) -> Void) {
-        let url = "http://localhost:8080/join/check"
-        let params = IdCheckRequest(id: id)
-        AF
-            .request(url,
-                     method: .post,
-                     parameters: params,
-                     encoder: .json,
-                     headers: nil)
-            .responseDecodable(of: CheckIdResponse.self) { response in
-                switch response.result {
-                case .success(let success):
-                    completionHandler(success)
-                case .failure(let error):
-                    print(error)
-                }
-            }
-            .resume()
-    }
-    
-    func postJoin(id: String, pw: String, name: String, completionHandler: @escaping (AuthResponse) -> Void) {
-        let url = "http://localhost:8080/join"
-        let params = Member(id: id, name: name, password: pw)
-        AF
-            .request(url,
-                     method: .post,
-                     parameters: params,
-                     encoder: .json,
-                     headers: nil)
-            .responseDecodable(of: AuthResponse.self) { response in
-                switch response.result {
-                case .success(let success):
-                    completionHandler(success)
-                case .failure(let error):
-                    print(error)
-                }
-            }
-            .resume()
-    }
-    
-    
-}
